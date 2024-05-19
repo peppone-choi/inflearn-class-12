@@ -64,7 +64,7 @@ const Quiz = ({ page, setPages, setPoint, point, serial, isPractice, testSelecte
           setIsAnswerViewed(!isAnswerViewed);
           router.refresh();
         }}
-        className={`${!isPractice || !selected ? "hidden" : ""} flex items-center justify-center py-3 my-2 mx-4 px-4 w-[calc(100%-2rem)] rounded-md bg-blue-700 text-white`}
+        className={`${!isPractice || !selected || isAnswerViewed ? "hidden" : ""} flex items-center justify-center py-3 my-2 mx-4 px-4 w-[calc(100%-2rem)] rounded-md bg-blue-700 text-white`}
       >
         정답을 확인하세요!
       </div>
